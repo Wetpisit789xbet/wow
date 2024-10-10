@@ -1,0 +1,476 @@
+
+
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #020202;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.card {
+    width: 350px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 8px;
+    color: #b99e85;
+    font-weight: 700;
+
+}
+
+.card-image {
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-bottom: 2px solid #333;
+}
+
+.card-content {
+    padding: 10px;
+    text-align: center;
+}
+
+.card-content h1 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.card-content p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #030708;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b99e85;
+}
+
+.nav {
+    background-color: #fffdfd;
+    padding: 10px 0;
+    width: 100%;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    color: #030708;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #b99e85;
+    border-radius: 5px;
+}
+
+.img-about {
+    width: 200px;
+    height: 400px;
+}
+
+.container-about {
+    color: #b99e85;
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+
+
+}
+
+.container-zodiac {
+    color: #b99e85;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    border-radius: 50%;
+
+}
+
+#zodiac-fortune {
+    margin-top: 20px;
+}
+
+#zodiac-fortune-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#zodiac-fortune-description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.drop {
+    border-radius: 30%;
+}
+
+#fortune-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#fortune-form input {
+    height: 3rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+}
+
+#zodiac-year {
+    height: 3rem;
+    border-radius: 20px;
+}
+
+.drop {
+    display: flex;
+    flex-direction: column;
+}
+
+.drop select {
+    height: 3rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+/* กำหนดรูปแบบพื้นฐาน */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #f2efef;
+    font-family: Arial, sans-serif;
+}
+
+/* รูปแบบการนำทาง */
+nav {
+    background-color: #1a1b1b;
+    padding: 10px 0;
+    width: 100%;
+    height: 2rem;
+    padding: 2rem 0;
+}
+
+ #nav-id-index li a {
+    color: #020202;
+ }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(241, 239, 239);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+
+}
+
+nav ul li a:hover {
+    background-color: #b99e85;
+    border-radius: 5px;
+
+}
+
+/* .nov {
+    background-color: #006678;
+} */
+
+/* Container ของ About */
+.container-about {
+    text-align: center;
+    color: #b99e85;
+    padding: 20px;
+}
+
+.zodiac-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 3rem;
+}
+/* .zodiac-details-text {
+    margin: 0 2rem;
+} */
+
+/* รูปแบบของการ์ด */
+/* .card {
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(13, 12, 12);
+    overflow: hidden;
+    margin: 20px auto;
+    overflow-y: auto;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content h2 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.card-content p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+} */
+
+/* .card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    overflow: auto;    
+}
+
+.card-content {
+    max-height: 200px; 
+    padding: 10px;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+} */
+/* .card-main {
+    height: 80vh;
+} */
+.card-main {
+    /* max-height: 80%;  */
+    height: 100%;
+    overflow-y: auto; /* เปิดการ scroll ตามแกน Y */
+    border: 1px solid #ccc; /* ใส่เส้นขอบเพื่อความสวยงาม */
+    padding: 10px; /* ระยะห่างภายใน */
+}
+
+.card-main {
+    /* max-height: 300px; */
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    scroll-behavior: smooth; /* เพิ่มการ scroll ที่ราบรื่น */
+}
+.card-image {
+    max-width: 20rem;
+    height: auto;
+}
+
+
+/* section grid  */
+.container-about {
+    padding: 20px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* ทำให้มีจำนวนคอลัมน์ปรับตามขนาดหน้าจอ */
+    gap: 20px; /* ระยะห่างระหว่างการ์ด */
+}
+
+.about-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-card img {
+    max-width: 100%; /* ปรับขนาดรูปให้พอดีกับการ์ด */
+    height: auto; /* ให้สูงอัตโนมัติตามอัตราส่วน */
+    border-radius: 8px; /* ทำมุมให้กลม */
+}
+
+
+
+/* รูปแบบของปุ่ม */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #090909;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b99e85;
+}
+
+/* Footer */
+footer {
+    background-color: #030708;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* กำหนดรูปแบบพื้นฐาน */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #e8eeef;
+    font-family: Arial, sans-serif;
+}
+
+/* รูปแบบการนำทาง */
+nav {
+    background-color: #030708;
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #b99e85;
+    border-radius: 5px;
+}
+
+/* Container ของ About */
+.container-about {
+    text-align: center;
+    color: #b99e85;
+    padding: 20px;
+}
+
+/* รูปแบบของการ์ด */
+.card {
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content h2 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.card-content p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* รูปแบบของปุ่ม */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #030708;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b99e85;
+}
+
+/* Footer */
+footer {
+    background-color: #030708;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}

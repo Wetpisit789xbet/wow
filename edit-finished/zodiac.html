@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทำนายดวงตามปีนักษัตร</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <ul id="nav-id-index">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="birthdate-fortune.html">fortune</a></li>
+            <li><a href="zodiac.html">zodiac</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-zodiac">
+        <h1>ดูดวงตามปีนักษัตร</h1>
+        <div class="drop">
+            <label for="zodiac-year">เลือกปีนักษัตร:</label>
+            <select id="zodiac-year">
+                <option value="ชวด">ชวด (Rat)</option>
+                <option value="ฉลู">ฉลู (Ox)</option>
+                <option value="ขาล">ขาล (Tiger)</option>
+                <option value="เถาะ">เถาะ (Rabbit)</option>
+                <option value="มะโรง">มะโรง (Dragon)</option>
+                <option value="มะเส็ง">มะเส็ง (Snake)</option>
+                <option value="มะเมีย">มะเมีย (Horse)</option>
+                <option value="มะแม">มะแม (Goat)</option>
+                <option value="วอก">วอก (Monkey)</option>
+                <option value="ระกา">ระกา (Rooster)</option>
+                <option value="จอ">จอ (Dog)</option>
+                <option value="กุน">กุน (Pig)</option>
+            </select>
+            <button onclick="generateZodiacFortune()">ทำนาย</button>
+        </div>
+        <div id="zodiac-fortune" style="display: none;">
+            <div class="zodiac-details">
+                <div class="zodiac-details-text">
+                    <h2 id="zodiac-fortune-title"></h2>
+                    <p id="zodiac-fortune-description"></p>
+                </div>
+                <div class="zodiac-details-text">
+                    <h2 id="zodiacFortuneTitle2"></h2>
+                    <p id="zodiacFortuneDescription2"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="zodiac.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทำนายดวงจากวันเกิด</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <ul id="nav-id-index">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="birthdate-fortune.html">fortune</a></li>
+            <li><a href="zodiac.html">zodiac</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-about">
+        <h1>ทำนายดวงจากวันเดือนปีเกิด</h1>
+        <form id="fortune-form">
+            <label for="day">วันเกิด:</label>
+            <input type="number" id="day" name="day" required>
+
+            <label for="month">เดือนเกิด:</label>
+            <input type="number" id="month" name="month" required>
+
+            <label for="year">ปีเกิด:</label>
+            <input type="number" id="year" name="year" required>
+
+            <button type="button" onclick="generateFortune()">ทำนาย</button>
+        </form>
+
+        <div id="fortune-result" class="card" style="display: none;">
+            <h2 id="fortune-title"></h2>
+            <p id="fortune-description"></p>
+        </div>
+    </div>
+
+    <script src="birthdate-fortune.js"></script>
+</body>
+
+</html>
